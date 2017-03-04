@@ -8,4 +8,4 @@ The bulk API makes it possible to perform many index/delete operations in a sing
 
 ## Usage
 
-The recommended usage is to configure it to collect and dispatch batches of 1MB, or dispatch immediately if there have been no new documents queued up in the last 10 seconds, to ensure that we never risk waiting too long before resources are indexed.
+The recommended usage is to configure it to collect and dispatch batches of X MB (TODO find sweet spot), or dispatch immediately if there have been no new documents queued up in the last 10 seconds, to ensure that we never risk waiting too long before resources are indexed.
